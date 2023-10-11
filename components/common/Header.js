@@ -24,7 +24,7 @@ const Header = () => {
           <div className='logo'>
             <Link href='/'>
             <Image
-      src="/logo.svg"
+      src="../images/logo.svg"
       width={150}
       height={50}
       alt="ISCS Technologies"
