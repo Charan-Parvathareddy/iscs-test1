@@ -3,7 +3,7 @@
   "version": "1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +14,6 @@
     "@next/font": "13.1.1",
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.180",
-    "autoprefixer": "^10.4.16",
     "framer-motion": "^10.16.4",
     "next": "13.3.0",
     "react": "18.2.0",
@@ -25,9 +24,14 @@
     "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "react-slideshow-image": "^4.2.1",
+    "react-spring": "^9.7.3",
     "sass": "^1.61.0",
     "slick-carousel": "^1.8.1",
     "theme-ui": "^0.16.1"
-    
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3"
   }
 }

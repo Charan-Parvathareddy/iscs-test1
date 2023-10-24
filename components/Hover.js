@@ -12,8 +12,8 @@ export default function Hover() {
     cancelOnInteraction={false} // should stop playing on user interaction
     interval={6000}
   >
-    <div data-src="images/stranger-things-7.png" />
-    <div data-src="images/stranger-things-6.jpg" />
+    <div data-src="images/ml.png" />
+    <div data-src="images/ml1.png" />
     <div data-src="images/stranger-things-5.jpg" />
  
   </AutoplaySlider>

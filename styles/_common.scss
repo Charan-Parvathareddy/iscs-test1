@@ -181,3 +181,231 @@
     padding: 50px 0;
   }
 }
+
+
+
+
+.linkBtn{
+  left: 950px;
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 600;
+  padding: 15px 50px 15px 25px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #845aff;
+  border-right: none;
+span{
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+  width: 60px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 86%;
+  margin-top: -7px;
+  background: url('../assets/images/link-arw.png') no-repeat right;
+  transition: all .4s ease-in;
+  background-position: right center;
+}
+
+}
+
+.sec02{
+
+--fa-style-family-brands: "Font Awesome 6 Brands";
+--fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+--fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+--fa-style-family-classic: "Font Awesome 6 Free";
+--fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+font-size: 16px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 300;
+color: #fff;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+.parallax{
+  width:100%;
+  height:100%;
+  
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  overflow: hidden;
+  h1{
+    font-size: 100px;
+  }
+}
+  .mountains{
+    background-image: url("/mountains.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .planets{
+    background-image: url("/planets.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+  .stars{
+    background-image: url("/stars.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 50%;
+    overflow: hidden;
+  }
+
+
+  
+.vservices{
+  background: #080e10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+.vtextContainer{
+  flex: 1;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  p{
+    font-weight: 200;
+    font-size: 20px;
+    color: gray;
+    text-align: right;
+  }
+  hr{
+    width: 500px;
+    border: none;
+    border-top: 0.5px solid gray;
+
+  }
+}
+
+
+  
+  .vtitleContainer{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .vtitle{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      img{
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+
+      }
+      h1{
+        font-size: 96px;
+        font-weight: 100;
+        color: gray;
+      }
+      button{
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: #845aff;
+        border:none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+ .vlistContainer{
+  flex: 2;
+  display: flex;
+  max-width: 1366px;
+  margin: auto;
+  
+.vbox{
+  padding: 50px;
+  border: 0.5px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  h2{
+    color: #845aff;
+  }
+  
+} 
+
+}
+}
+
+.p1 {
+  color: #845aff;
+}
+
+.slidingTextContainer{
+  position: absolute;
+  font-size: 50vh;
+  color: gray;
+  white-space: nowrap;
+  width:50%;
+  font-weight: bold;
+}
+
+.vtextContainer11{
+
+  .hr{
+    width: 500px;
+    border: none;
+    border-top: 0.5px solid gray;
+;
+
+  }
+
+}

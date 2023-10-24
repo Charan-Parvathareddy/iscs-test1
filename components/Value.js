@@ -1,57 +1,107 @@
 import React from "react"
-import { Title } from "@/components/common/Title"
+import { Title, TitleSm } from "@/components/common/Title"
+import Link from "next/link"
+import {motion, useScroll , useTransform} from 'framer-motion'
+import { useRef } from 'react'
+import Values from "./Values"
+
+const textVariants ={
+  initial :{
+    x:-500,
+    opacity:0,
+  },
+  animate :{
+    x:0,
+    opacity:1,
+    transition :{
+      duration : 1,
+      staggerChildren : 0.1,
+    },
+    },
+    initial1 :{
+      y:-500,
+      opacity:0,
+    },
+    animate1 :{
+      y:0,
+      opacity:1,
+      transition :{
+        duration : 1,
+        staggerChildren : 0.1,
+      },
+      },
+      initial2 :{
+        y:500,
+        opacity:0,
+      },
+      animate2 :{
+        y:0,
+        opacity:1,
+        transition :{
+          duration : 1,
+          staggerChildren : 0.1,
+        },
+        },
+scrollButton:{
+    opacity:0,
+    transition:{
+      duration:2,
+      repeat:Infinity
+    }
+ },
+}; 
 
 const Value = () => {
-  
-  return (
-<section className='agency bg-top'>
-        <div className='container'>
-          <div className='heading-title'>
-          <Title title='ABOUT ISCS' className='title-bg' />
-            
-            <br />
-            <Title title='The last digital agency you will ever need!'  />
-          </div>
+  const ref = useRef()
+  const {scrollYProgress} = useScroll({
+      target:ref,
+      offset:["start start","end start"]
+  })
+const yText=useTransform(scrollYProgress,[0,1],["0%","500%"])    
+const yBg=useTransform(scrollYProgress,[0,1],["0%","500%"])    
 
-          <div className='content flex1'>
-            <div className='left w-60 py'>
-              <Title title='Turning your business ideas into smart digital products since 2001' />
-              <p className='desc-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus eleifend magna, molestie iaculis sem pulvinar eu. Etiam non dui felis. Proin posuere dapibus magna laoreet posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, sem eget sollicitudin tempor, libero velit aliquam enim, vel egestas tortor ante quis sem.</p>
-              <div className='grid-3'>
-                <div className='box'>
-                  <h1 className='indigo'>10+</h1>
-                  <h3>Years of experience</h3>
-                </div>
+  return (
+  <section className='agency bg-top'>
+   <div className='container'>
+   <div className='content flex1'>
+    <motion.div className='left w-70 '  variants={textVariants} initial='initial' animate='animate'>
+      <Title title='We turn your business ideas into smart digital products' />
+        <p className='desc-p '>We are a diverse team with unique perspectives. United in our purpose, our strategy and our culture. Driven by our ambition and the power of technology to drive human progress. Unwavering in our commitment to equality, trust and advocacy for one another.</p>
+        <p className='desc-p'>At ISCS Technologies, we are innovation pioneers driving the digital revolution forward. Together, and as individuals, our passion and unique perspectives propel every idea, concept and solution we create. By embracing our differences and investing time in our diversity, our leaders foster a culture of innovation and inclusion that enables us to create technology that ensures widespread accessibility and impactful improvements to daily life.</p>
+        <p className='desc-p'>From hybrid cloud solutions to high-performance computing to ambitious social impact and sustainability initiatives, what we do impacts everyone, everywhere.</p>
+
+    <div className='grid-3'>
+      
+          <div className='box'>
+            <h1 className='indigo'>10+</h1>
+            <p className="p1">Years of experience</p>
+            
+            </div>
                 <div className='box'>
                   <h1 className='indigo'>50+</h1>
-                  <h3>Successful cases</h3>
+                  <p className="p1">Successful cases</p>
                 </div>
                 <div className='box'>
                   <h1 className='indigo'>12+</h1>
-                  <h3>Industry awards</h3>
+                  <p className="p1">Industry awards</p>
                 </div>
-              </div>
-            </div>
-            <div className='right w-40 ml'>
-              <img src='/images/s1.jpg' alt='Img' className='round' width='100%' height='100%' />
-            </div>
+    </div>
+              
+              <br/><br/><br/><br/><br/><br/>
+              </motion.div>
+            <motion.div className='right w-40 '  variants={textVariants} initial='initial1' animate='animate1'>
+              <img src='/images/altum.jpg' alt='Img' className='round' width='100%' height='68%' />   
+            </motion.div>
           </div>
-
-          <div className='content flex'>
-            <div className='left w-40 py'>
-              <img src='/images/s4.jpg' alt='Img' className='round' width='100%' height='100%' />
-            </div>
-            <div className='right w-60 ml'>
-              <Title title='Our mission' />
-              <br />
-              <p className='desc-p'>Fusce fringilla justo vel dui consectetur, fringilla maximus ante malesuada. Suspendisse facilisis nisl augue, ut sollicitudin lectus ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse vitae officia nostrum facere. Fugiat voluptates, expedita dolore at perferendis quae libero fuga consequatur veniam, eius non fugit nulla vitae?</p>
-            </div>
-          </div>
-        </div>
-      </section>
+           </div>
+     
+           <Values/>
+           </section>
   
     
   )
 }
 
 export default Value
+
+
